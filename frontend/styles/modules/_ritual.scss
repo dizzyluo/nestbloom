@@ -363,7 +363,7 @@ $ritual-header-color: #ebaca6;
 .ritual-stage__subtitle {
     position: absolute;
     right: 0;
-    bottom: -40px;
+    bottom: -52px;
     left: 0;
     font-size: rem(16px);
     color: #a8968d;
@@ -377,13 +377,17 @@ $ritual-header-color: #ebaca6;
         bottom: 0px;
     }
     @media screen and (min-width: $breakpoint-palm-portrait) {
-        bottom: -10px;
+        bottom: 2vh;
     }
     @media screen and (min-width: $breakpoint-tablet-portrait) {
-        bottom: -40px;
+        bottom: 2vh;
+        font-size: 1.7vh;
     }
     @media screen and (min-width: $breakpoint-tablet-landscape) {
-        bottom: -40px;
+        bottom: 14vh;
+        transform: translateX(-20px);
+        font-size: 1.5vh;
+
     }
     @media screen and (min-width: $breakpoint-laptop) {
         bottom: -40px;
@@ -785,7 +789,7 @@ $ritual-header-color: #ebaca6;
     .ritual-stage--one & {
         z-index: 99;
         position: absolute;
-        bottom: 10%;
+        bottom: 8.5vh;
         width: 100%; 
         padding: 0 35%;
         font-size: 0.7em;
@@ -798,10 +802,10 @@ $ritual-header-color: #ebaca6;
         }
 
         @media screen and (min-width: $breakpoint-tablet-portrait) {
-            bottom: 10%;
+            bottom: 15vh;
             width: 100%; 
             padding: 0 40%;
-            font-size: 0.7em;
+            font-size: 1.3em;
         }
 
         @media screen and (min-width: $breakpoint-laptop) {
