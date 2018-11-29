@@ -130,12 +130,64 @@ $ritual-header-color: #ebaca6;
     // top: 7%;
     z-index: 1;
     display: block;
+    position: relative; 
+    top: -7vh;
     // margin: 0 0 -50px;
     text-align: center;
     font-family: $fontstack-serif-secondary;
     font-weight: 500;
-    font-size: rem(100px);
+    // font-size: rem(100px);
+    font-size: 3.9rem;
     color: $ritual-header-color;
+
+    @media screen and (min-width: $breakpoint-mobile-portrait) {
+        font-size: 5rem;
+        top: -14vh;
+    }
+
+    @media screen and (min-width: $breakpoint-palm-portrait) {
+        font-size: 5rem;
+        top: -10vh;
+    }
+
+    @media screen and (min-width: $breakpoint-mobile-small-landscape) {
+        // width: 29vh !important;
+        // top: 49vh !important;
+    }
+
+    @media screen and (min-width: $breakpoint-mobile-landscape) {
+        // font-size: 5rem;
+        // top: -15vh;
+    }
+
+    @media screen and (min-width: $breakpoint-palm-landscape) {
+        font-size: 15vh;
+        top: -4vh;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet-portrait) {
+        font-size: 12vh; 
+        top: -11vh; 
+        width: 95%;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet-landscape) {
+        font-size: 8vh;
+        top: 12vh;
+        width: 97%;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+        font-size: 9vh;
+        top: 10vh;
+        width: 98%
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        font-size: 11vh;
+        top: 9vh;
+        width: 97%;
+    }
 
     // @media screen and (max-width: 1440px) {
     //     margin-top: -10px;
@@ -354,19 +406,19 @@ $ritual-header-color: #ebaca6;
     font-weight: 400;
     text-align: left;
 
-    .ritual-stage__title {
-        margin-bottom: 49vh;
+    // .ritual-stage__title {
+    //     margin-bottom: 49vh;
 
-        @media screen and(min-width: $breakpoint-tablet-portrait) {
-            // font-size: 12vw;
-            margin-bottom: 40vh;
-        }
+    //     @media screen and(min-width: $breakpoint-tablet-portrait) {
+    //         // font-size: 12vw;
+    //         margin-bottom: 40vh;
+    //     }
 
-        @media screen and (min-width: $breakpoint-tablet-landscape) {
-            margin-bottom: 0;
-        }
+    //     @media screen and (min-width: $breakpoint-tablet-landscape) {
+    //         margin-bottom: 0;
+    //     }
        
-    }
+    // }
 
     hr {
         margin: 20px 0 0 0;
@@ -795,23 +847,45 @@ $ritual-header-color: #ebaca6;
 
 .ritual-product__packaging {
     position: absolute;
-    top: 63vh;
+    top: 51vh;
     right: 0;
     left: 0;
     z-index: 10;
-    // width: 90%;
     width: 69vw;
     max-width: 480px;
     height: auto;
     margin: auto;
-    transform: translateY(-50%);
+
+    @media screen and (min-width: $breakpoint-mobile-portrait) {
+        top: 47vh;
+    }
+
+    @media screen and (min-width: $breakpoint-palm-portrait) {
+        top: 47vh;
+    }
+
+    @media screen and (min-width: $breakpoint-mobile-small-landscape) {
+        top: 47vh;
+    }
+
+    @media screen and (min-width: $breakpoint-mobile-landscape) {
+        top: 47vh;
+    }
+
+    @media screen and (min-width: $breakpoint-palm-landscape) {
+        top: 45vh;
+    }
 
     @media screen and (min-width: $breakpoint-tablet-portrait) {
-        width: 55vw;
+        top: 49vh;
     }
 
     @media screen and (min-width: $breakpoint-laptop) {
-        width: 40vw;
+        top: 44vh;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        top: 48vh;
     }
 
     img {
@@ -865,12 +939,12 @@ $ritual-header-color: #ebaca6;
     transition: opacity 300ms ease;
 
     @media screen and (min-width: $breakpoint-mobile-portrait) {
-        top: 53vh !important;
+        top: 49vh !important;
     }
 
     @media screen and (min-width: $breakpoint-palm-portrait) {
         width: 20vh !important;
-        top: 53vh !important;
+        top: 52vh !important;
     }
 
     @media screen and (min-width: $breakpoint-mobile-small-landscape) {
