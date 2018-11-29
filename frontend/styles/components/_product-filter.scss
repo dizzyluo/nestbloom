@@ -12,7 +12,11 @@
     width: 100%;
 
     &.grid {
-        padding: 100px;
+        padding: 0px;
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            padding: 100px;
+        }
 
         .grid__item {
             vertical-align: top;
@@ -38,6 +42,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media screen and (max-width: $breakpoint-palm-portrait) {
+        text-align: center;
+    }
+
 }
 
 .product-filter__category {
@@ -49,6 +58,24 @@
     font-size: rem(20px);
     font-weight: 200;
     color: #AAAAAA;
+    width: 100%; 
+
+    // @media screen and (min-width: $breakpoint-mobile-potrait) {
+    //     width: auto;
+    // }
+    // @media screen and (min-width: $breakpoint-palm-portrait) {
+    //     width: auto;
+    // }
+    @media screen and (min-width: $breakpoint-tablet-portrait) {
+        width: auto;
+    }
+    @media screen and (min-width: $breakpoint-tablet-landscape) {
+        width: auto;
+    }
+    @media screen and (min-width: $breakpoint-laptop) {
+        width: auto;
+    }
+
 
     &:hover,
     &.product-filter__category--active {
